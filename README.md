@@ -1,4 +1,4 @@
-**这是一个OT Blueteam的Windows端的上位机及内网信息收集工具。**
+**这是一个OT Blueteam用于Windows系统的上位机及内网自检工具。**
 
 ## 功能概述
 
@@ -77,7 +77,7 @@ BlueTeam-ICS-Station.bat -ip
 
 ### 下载文件
 ```
-BlueTeam-ICS-Station.bat -download http://example.com/tool.exe c:\temp\tool.exe
+BlueTeam-ICS-Station.bat -download http://abc.com/1.exe c:\temp\1.exe
 ```
 从指定URL下载文件并保存到本地路径。
 
@@ -89,15 +89,15 @@ BlueTeam-ICS-Station.bat -privesc
 
 ### 创建持久化
 ```
-BlueTeam-ICS-Station.bat -persist "MaliciousTask" "c:\temp\backdoor.exe"
+BlueTeam-ICS-Station.bat -persist "BadTask" "c:\temp\1.exe"
 ```
-创建一个名为"MaliciousTask"的计划任务，在用户登录时执行指定命令。
+创建一个名为"BadTask"的计划任务，在用户登录时执行指定命令。
 
 ### 扫描本地网络
 ```
 BlueTeam-ICS-Station.bat -netscan
 ```
-扫描本地网络中的活动主机，并检查常见开放端口。
+扫描本地网络中的活动主机和设备，并检查常见开放端口。
 
 ### 检测安全产品
 ```
